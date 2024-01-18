@@ -12,6 +12,7 @@ import { CardModule } from 'primeng/card';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { ToastModule } from 'primeng/toast';
+import { MessageService } from 'primeng/api';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import { ToastModule } from 'primeng/toast';
     ButtonModule,
     ToastModule
   ],
-  providers: [CookieService],
+  providers: [CookieService, MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
